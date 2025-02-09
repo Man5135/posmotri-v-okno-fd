@@ -12,6 +12,7 @@ html {
 .page {
   display: flex;
   margin: auto;
+  align-items: center;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -46,8 +47,9 @@ fieldset{
 
 .content {
   display: grid;
+  padding-bottom: 333px;
+  padding-top: 333px;
   width: 1140px;
-  height: 534px;
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 133px;
@@ -70,7 +72,6 @@ fieldset {
 .search-form {
   display: flex;
   width: 711px;
-  height: 54px;
   justify-content: space-between;
   align-items: center;
 }
@@ -110,7 +111,7 @@ fieldset {
   width: 711px;
   height: 386px;
   margin-right: 30px;
-  margin-top: 80px;
+  margin-top: 78px;
   margin-bottom: 16px;
   position: relative;
 }
@@ -136,13 +137,18 @@ fieldset {
   margin: 0;
 }
 
-.content__list::-webkit-scrollbar {
-  width: 0px;
+::-webkit-scrollbar{
+  width: 4px;
+  height: 0px;
+  background-color: #D9D9D9 10%;
 }
-
+::-webkit-scrollbar-thumb {
+  background-color: #D9D9D9;
+}
 
 .content__details {
   width: 100%;
+
 }
 
 .content__video-card {
@@ -177,11 +183,16 @@ fieldset {
 
 .content__video-card-description {
   font-family: "Fira Sans Condensed", sans-serif;
+  max-width: 196px;
   font-size: 18px;
   font-weight: 400;
   line-height: 16.2px;
   letter-spacing: 0em;
   text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
 }
 .visually-hidden {
   position: absolute;
@@ -205,6 +216,8 @@ fieldset {
 
 .content__card-link:active {
   background-color: #545050;
+  border-left: 1px none;
+  border-right: 1px none;
 }
 
 .content__card-link_current {
@@ -221,8 +234,7 @@ fieldset {
 }
 
 .content__card-link:focus-visible {
-  border: 1px solid #ffffff;
-  outline: none;
+  outline: 1px solid #ffffff;
 }
 .search-form__textfield {
   all: unset;
@@ -241,7 +253,7 @@ fieldset {
 }
 
 .search-form__textfield:active {
-  border: 1px solid #ffffff;
+  outline: 1px solid #ffffff;
 }
 
 .search-form__textfield:hover {
@@ -249,8 +261,7 @@ fieldset {
 }
 
 .search-form__textfield:has(:focus-visible) {
-  outline: none;
-  border: 3px double #ffffff;
+  outline: 3px double #ffffff;
 }
 
 .search-form__checkbox-list {
@@ -285,27 +296,26 @@ fieldset {
 }
 
 .search-form__label:has(:focus-visible) {
-  border: 1px solid #ffffff;
+  outline: 1px solid #ffffff;
   outline: none;
 }
 
 .search-form__submit-button {
-  font-family: "Fira Sans Condensed", sans-serif;
-  all: unset;
   width: 194px;
   height: 34px;
-  border: 1px #ffffff solid;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: center;
-  cursor: pointer;
+  outline: 1px solid #ffffff;
   margin-top: 20px;
 }
 
 button {
+  all: unset;
   cursor: pointer;
+  font-family: "Fira Sans Condensed", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em; 
 }
 
 button:active {
@@ -322,22 +332,14 @@ button:focus {
 }
 
 button:focus-visible {
-  border: 1px double #ffffff;
+  outline: 1px double #ffffff;
   border-width: 3px;
   outline: none;
 }
 
 .more-button {
-  font-family: "Fira Sans Condensed", sans-serif;
-  all: unset;
   outline: 1px #ffffff solid;
   width: 399px;
   height: 34px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: center;
-  cursor: pointer;
   outline-offset: -2px;
 }
