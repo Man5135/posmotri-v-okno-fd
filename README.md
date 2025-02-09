@@ -1,1 +1,1 @@
-https://github.com/Man5135/posmotri-v-okno-main-fd.git
+https://github.com/Man5135/posmotri-v-okno-fd.git
