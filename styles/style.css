@@ -297,29 +297,31 @@ fieldset {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #ffffff;
-  outline: none;
 }
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
-  outline: 1px solid #ffffff;
   margin-top: 20px;
 }
 
 button {
   all: unset;
+  height: 34px;
   cursor: pointer;
   font-family: "Fira Sans Condensed", sans-serif;
   text-align: center;
+  border: 1px double #ffffff;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
-  letter-spacing: 0em; 
+  letter-spacing: 0em;
+   
 }
 
 button:active {
   background-color: #545050;
+  outline: 1px solid #ffffff;
+
 }
 
 button:hover {
@@ -328,7 +330,7 @@ button:hover {
 }
 
 button:focus {
-  outline: none;
+  outline: 1px double #ffffff;
 }
 
 button:focus-visible {
@@ -338,8 +340,7 @@ button:focus-visible {
 }
 
 .more-button {
-  outline: 1px #ffffff solid;
+  outline: none;
   width: 399px;
-  height: 34px;
   outline-offset: -2px;
 }
