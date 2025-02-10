@@ -261,7 +261,7 @@ fieldset {
 }
 
 .search-form__textfield:has(:focus-visible) {
-  outline: 3px double #ffffff;
+  outline: 1px double #ffffff;
 }
 
 .search-form__checkbox-list {
@@ -297,6 +297,7 @@ fieldset {
 
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #ffffff;
+  outline-offset: 2px;
 }
 
 .search-form__submit-button {
@@ -327,19 +328,19 @@ button:active {
 button:hover {
   cursor: pointer;
   text-decoration: underline;
+  
 }
 
 button:focus {
   outline: 1px double #ffffff;
+  outline-offset: 2px;
 }
 
 button:focus-visible {
   outline: 1px double #ffffff;
-  border-width: 3px;
-  outline: none;
+  outline-offset: 2px;
 }
 
 .more-button {
   width: 399px;
-  outline-offset: -2px;
 }
