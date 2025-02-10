@@ -340,7 +340,6 @@ button:focus-visible {
 }
 
 .more-button {
-  outline: none;
   width: 399px;
   outline-offset: -2px;
 }
